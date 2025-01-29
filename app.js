@@ -235,12 +235,11 @@ console.log(sekundlar(1, 3));
 //function 26
 //Quyidagi namunalarni kuzatgan holda funksiya yasang.
 
-function fun(n) {
-  let result = n % 1 == 0;
+function son(a) {
+  let result = a / 1 == 0;
   return result;
 }
-
-console.log(fun(6));
+console.log(son(5));
 
 //function 27
 //Funskiay 2ta istalgan turdagi qiymatlar qabul qiladi. Agar ushbu 2ta qiymat ham qiymat jihatidan ham ma’lumot turi jihatidan teng bo’lsa rost, aks holda funkisya yolg’on qiymat qaytarsin.
@@ -266,6 +265,13 @@ console.log(booleanToString(true));
 
 //function 30
 //Framelar sonini hisoblaydigan funksiya yarating. Frame bu 1 sekundda necha marta ko’rinishlar soni aylanishi. Funksiya minutlar va 1 sekundda nechta framelar soni aylanishini argument sifatida qabul qiladi. Funksiya jami framelar sonini qaytarsin.
+
+function frameSoni(minut, frame) {
+  let result = minut * frame * 60;
+  return result;
+}
+
+console.log(frameSoni(10, 25));
 
 //function 31 ???
 //Oddiy matematik amallar ketma-ketligi string ko’rinishida funksiyaga argument sifatida beriladi. Ushbu funksiya matematik ifodani bajarib natijani qaytarsin.
