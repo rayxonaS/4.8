@@ -310,8 +310,24 @@ console.log(fun(7, 3));
 //function 35 buni o'tmadik
 
 //function 36
+//Funksiyaga 2ta argument sifatida string ko’rinishidagi ma’lumotlar beriladi. Agar ushbu ikkala stringdagi belgilar soni bir-birinikiga teng bo’lsa funksiya rost qiymat qaytarsin, aks hold yolg’on.
+
+function tengStrings(str1, str2) {
+  let result = str1.length == str2.length;
+  return result;
+}
+
+console.log(tengStrings("AB", "ABS"));
 
 //function 37
+//Shunday funksiya yasangki, unga string argument qilib beriladi, agar ushbu string bo’sh bo’lsa funksiya true qaytaradi, aks holda false.
+
+function boshStr(str) {
+  let result = !Boolean(str.trim());
+  return result;
+}
+
+console.log(boshStr(" a "));
 
 //function 38
 //Shunday funksiya yasang.Unda butun son argument qilib beriladi. Agar ushbu butun son 5ga bo’linsa, funksiya true qaytarsin, aks holda false.
@@ -334,3 +350,9 @@ function bolinsin100(son) {
 console.log(bolinsin100(37));
 
 //function 40
+//Shunday funksiya yasangki, ushbu funksiya stringni ichida nechta belgi borligini aytsin. Bunda length propertisidan foydalanmang va rekursiv funksiya ishlating.
+
+let ism = "Ananas";
+let lastElement = ism.at(-1);
+let lastElementPosition = ism.lastIndexOf(lastElement);
+console.log(lastElementPosition + 1);
